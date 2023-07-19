@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
-
 import {HttpClientModule} from '@angular/common/http'
+import { RouterModule } from '@angular/router';
+
+
+import { NotFoundComponent } from './components/not-found/not-found.component';
+
 
 
 
 @NgModule({
-  declarations: [],
-  imports: [HttpClientModule
+  declarations: [NotFoundComponent],
+  imports: [HttpClientModule, RouterModule
 
   ],
-  exports: [HttpClientModule],
+  exports: [HttpClientModule, NotFoundComponent, RouterModule],
 })
 export class SharedModule { }
