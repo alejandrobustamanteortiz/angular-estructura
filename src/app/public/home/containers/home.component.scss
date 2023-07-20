@@ -1,0 +1,6 @@
+.grid{
+
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  grid-gap: 20px; /* Espacio entre las tarjetas */
+}

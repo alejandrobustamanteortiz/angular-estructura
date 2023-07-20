@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './core/shared/components/not-found/not-found.component';
+
 
 const routes: Routes = [
   {path: '', loadChildren: ()=> import('./public/public.module').then(m =>m.PublicModule)},
